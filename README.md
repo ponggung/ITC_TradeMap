@@ -3,6 +3,8 @@
 - 目標網站: https://www.trademap.org/Country_SelProduct_TS.aspx   
 - 網站敘述: ITC Trade Map 資料庫, 包含世界各國的農產品進出口紀錄   
 - 爬蟲要求: 下載特定品項的每月進出口值、量  
+1. Use Python Selenium package  
+2. 登入會員才能選取到題目要求的品項
 
 (1) Products = [
 "020711 - Fresh or chilled fowls of the species Gallus domesticus, not cut in pieces" "020712 - Frozen fowls of the species Gallus domesticus, not cut in pieces" "020714 - Frozen cuts and edible offal of fowls of the species Gallus domesticus" "040700 - Birds' eggs, in shell, fresh, preserved or cooked"]
