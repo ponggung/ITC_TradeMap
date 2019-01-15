@@ -1,0 +1,9 @@
+selenium==3.7.0
+beautifulsoup4==4.6.0
+numpy==1.14.5
+scipy==1.0.0
+pandas==0.22.0
+matplotlib==2.1.2
+Flask==0.12.2
+Flask-Compress==1.4.0
+Flask-Cors==3.0.3

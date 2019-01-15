@@ -17,11 +17,11 @@ class TradeSpider(object):
         logging.info("start TradeSpider!")
 
     def setDriver(self):
-        # self.driver = webdriver.PhantomJS()
-        options = Options()
-        options.add_argument("--headless")
-        self.driver = webdriver.Firefox(
-            firefox_options=options, executable_path='./geckodriver')
+        self.driver = webdriver.PhantomJS()
+        # options = Options()
+        # options.add_argument("--headless")
+        # self.driver = webdriver.Firefox(
+        #     firefox_options=options, executable_path='./geckodriver')
 
     # ---login----
     def login(self, ac, pw):
@@ -147,7 +147,7 @@ class TradeSpider(object):
 
 if __name__ == "__main__":
     ac = "ponggung1986@gmail.com"
-    pw = "********"
+    pw = "W8Ce5wW5z2qMs2K"
     s = TradeSpider()
     s.setDriver()
     s.login(ac, pw)

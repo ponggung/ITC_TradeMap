@@ -2,3 +2,6 @@ geckodriver.log
 ghostdriver.log
 backendtest.pdf
 __pycache__
+.ipynb_checkpoints
+.vscode
+.DS_Store

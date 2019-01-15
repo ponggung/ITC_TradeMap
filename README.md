@@ -34,11 +34,22 @@ Step | Work | Code
 sudo pip install -r requirement.txt
 ```
 
-## Driver version
+## firefox version
 ```
 firefox 64.0  
 geckodriver v0.23.0  
 https://github.com/mozilla/geckodriver/releases
+```
+## phantomjs version
+```
+conda install -y -c conda-forge phantomjs
+phantomjs 2.1.1
+```
+
+## Docker
+```
+docker build -t itc_trade_spider:latest -f Dockerfile .
+docker run itc_trade_spider
 ```
 
 ## Quick test
@@ -48,6 +59,8 @@ python parser.py
 python toJson.py
 check.ipynb
 ```
+## GCP API 
+https://itc-map-result.appspot.com/map_result
 
 ## Run
 ```
