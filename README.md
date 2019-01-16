@@ -1,5 +1,19 @@
 # ITC_TradeMap
 
+1. 爬蟲
+2. 解析HTML
+3. 將資料整理轉成Json 
+4. 在GCP APP Engine 上部署API
+
+## 主程式
+Step | Work | Code
+---|:---:|---
+1|爬蟲|spider.py
+2|解析 HTML|parser.py.py
+3|DataFrame 格式轉換成json| toJson.py
+
+
+## 爬蟲
 - 目標網站: https://www.trademap.org/Country_SelProduct_TS.aspx   
 - 網站敘述: ITC Trade Map 資料庫, 包含世界各國的農產品進出口紀錄   
 - 爬蟲要求: 下載特定品項的每月進出口值、量  
@@ -19,31 +33,24 @@
 ![web](img/web.png)  
 ![df](img/df.png)
 
-
-## 主程式
-
-Step | Work | Code
----|:---:|---
-1|爬蟲|spider.py
-2|解析 HTML|parser.py.py
-3|DataFrame 格式轉換成json| toJson.py
-
-
 ## Install
 ```
 sudo pip install -r requirement.txt
 ```
+## Web Driver
+- firefox 64.0, geckodriver v0.23.0  
 
-## firefox version
+需要安裝相對應OS的driver與firefox，這邊裝的是mac版 geckodriver有要求相對應firefox 的版本與 Selenium的版本，通常是最新的就比較沒有問題
 ```
-firefox 64.0  
-geckodriver v0.23.0  
-https://github.com/mozilla/geckodriver/releases
+wget https://github.com/mozilla/geckodriver/releases/download/v0.23.0/geckodriver-v0.23.0-macos.tar.gz
+tar -zxvf geckodriver-v0.23.0-macos.tar.gz
 ```
-## phantomjs version
+
+- phantomjs 2.1.1
+
+使用anaconda 的安裝套件安裝
 ```
 conda install -y -c conda-forge phantomjs
-phantomjs 2.1.1
 ```
 
 ## Docker
