@@ -9,7 +9,7 @@
 Step | Work | Code
 ---|:---:|---
 1|爬蟲|spider.py
-2|解析 HTML|parser.py.py
+2|解析 HTML|parser.py
 3|DataFrame 格式轉換成json| toJson.py
 
 
